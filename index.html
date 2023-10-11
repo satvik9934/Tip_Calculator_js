@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+            <h1> Satvik's Tip Calculator</h1>
+            <label for="billrate"> How much was the bill?<br>
+                <select name="" id="select1">
+                    <option value="Rs" name="">Rs</option>
+                    <option value="$">$</option>
+                </select>
+                <input type="text" id="billrate"></label>
+
+                <label for="servicerate"> How was our service? <br>
+                <select name="" id="rate">
+                <option value="Please Give Rating" name="">---Choose a Option---</option>
+                <option value="30">30% - Outstanding</option>
+                <option value="20">20% - Good</option>
+                <option value="10">10% - It was okay</option>
+                <option value="0">0% - Terrible</option>
+                </select></label>
+              
+                <label for="peoplenum">How many people are sharing the bill? <br>
+                    <input type="text" id="peoplenum"> 
+                    &nbsp;people </label>
+
+                 <div class="btn">
+                    <button id="btn">CALCULATE!!</button>
+                 </div>   
+                 <div class="tipamount">
+                    <h5>Tip Amount</h5>
+                    <p id="calc"></p>
+                 </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
